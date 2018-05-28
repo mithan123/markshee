@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+
+    <title>librarymanagmentform</title>
+
+</head>
+<body>
+        <nav class="navbar navbar-primary bg-primary">
+            <h1>Library Management Form</h1></header> </nav>
+   <br/> 
+  
+        
+          <div class="form-group col-md-6">
+            <label >User Id</label>
+            <input type="text" class="form-control" id="uid">
+          </div>
+          <div class="form-group col-md-6">
+            <label >User Name</label>
+            <input type="text" class="form-control" id="uname" >
+          </div>
+        
+          <div class="form-group col-md-6">
+          <label >Father Name</label>
+          <input type="text" class="form-control" id="fname" >
+        </div>
+        <div class="form-group col-md-6">
+          <label >Class of student</label>
+          <input type="text" class="form-control" id="classstu" >
+        </div>
+
+        <button type="submit" class="btn btn-primary" onclick=" description ()">Submit</button>
+        <br/><br/><br/>
+        <!-- Book array -->
+       
+
+
+        <div class="form-row">
+          <div class="form-group col-md-3">
+            <label >Pyhsics</label>
+            <select id="book array1" class="form-control">
+              <option selected>Book 1</option>
+              <option>Book 2</option>
+              <option>Book 3</option>
+              <option>Book 4</option>
+              <option>Book 5</option>
+              <option>Book 6</option>
+              <option>Book 7</option>
+              <option>Book 8</option>
+              <option>Book 9</option>
+            </select>
+
+            <button type="submit" class="btn btn-primary" onclick=" select1()">select</button>
+
+            </div>
+
+            <div class="form-group col-md-3">
+            <label >Chemistry</label>
+            <select id="book array2" class="form-control">
+              <option selected>Book 1</option>
+              <option>Book 2</option>
+              <option>Book 3</option>
+              <option>Book 4</option>
+              <option>Book 5</option>
+              <option>Book 6</option>
+              <option>Book 7</option>
+              <option>Book 8</option>
+              <option>Book 9</option>
+            </select>
+
+            <button type="submit" class="btn btn-primary" onclick=" select2()">select</button>
+            </div>
+
+            <div class="form-group col-md-3">
+                    <label >Botany</label>
+                    <select id="book array3" class="form-control">
+                      <option selected>Book 1</option>
+                      <option>Book 2</option>
+                      <option>Book 3</option>
+                      <option>Book 4</option>
+                      <option>Book 5</option>
+                      <option>Book 6</option>
+                      <option>Book 7</option>
+                      <option>Book 8</option>
+                      <option>Book 9</option>
+                    </select>
+                    <button type="submit" class="btn btn-primary" onclick=" select3()">select</button>
+                    </div>
+
+                    <div class="form-group col-md-3">
+                            <label >Zoology</label>
+                            <select id="book array4" class="form-control">
+                              <option selected>Book 1</option>
+                              <option>Book 2</option>
+                              <option>Book 3</option>
+                              <option>Book 4</option>
+                              <option>Book 5</option>
+                              <option>Book 6</option>
+                              <option>Book 7</option>
+                              <option>Book 8</option>
+                              <option>Book 9</option>
+                            </select>
+                            <button type="submit" class="btn btn-primary" onclick=" select4()">select</button>
+                            </div>
+
+
+
+
+           </div>
+        
+           
+            
+            
+            
+           
+            </div>
+      
+</body>
+<script type="text/javascript">
+  
+var description = function(){
+var ui = document.getElementById("uid").value;
+console.log("User Id"+ui);
+
+var unam = document.getElementById("uname").value;
+console.log("User name "+unam);
+
+var fnam = document.getElementById("fname").value;
+console.log("father name"+fnam);
+
+var clastu = document.getElementById("classstu").value;
+console.log("Class of student"+clastu);
+
+
+
+}
+function select1() {
+    var u = document.getElementById("book array1").value;
+    // document.getElementById("demo").innerHTML =  + x + " Selected";
+console.log("physics "+u);
+}
+function select2() {
+    var x = document.getElementById("book array1").value;
+    // document.getElementById("demo").innerHTML =  + x + " Selected";
+console.log("Chemistry"+x);
+}
+function select3() {
+    var y = document.getElementById("book array1").value;
+    // document.getElementById("demo").innerHTML =  + x + " Selected";
+console.log("Botany"+y);
+}
+function select4() {
+    var z= document.getElementById("book array1").value;
+    // document.getElementById("demo").innerHTML =  + x + " Selected";
+console.log("Zology"+z);
+}
+</script>
+</html>
